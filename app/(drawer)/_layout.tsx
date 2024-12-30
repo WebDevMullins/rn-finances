@@ -4,6 +4,8 @@ import { Drawer } from 'expo-router/drawer'
 
 import { HeaderButton } from '../../components/HeaderButton'
 
+import { ThemeToggle } from '@/components/ThemeToggle'
+
 const DrawerLayout = () => (
 	<Drawer>
 		<Drawer.Screen
@@ -17,7 +19,8 @@ const DrawerLayout = () => (
 						size={size}
 						color={color}
 					/>
-				)
+				),
+				headerRight: () => <ThemeToggle />
 			}}
 		/>
 		<Drawer.Screen
