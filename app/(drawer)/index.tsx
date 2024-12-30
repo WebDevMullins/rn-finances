@@ -1,15 +1,19 @@
-import { Stack } from 'expo-router';
+import { Stack } from 'expo-router'
+import React from 'react'
 
-import { Container } from '~/components/Container';
-import { ScreenContent } from '~/components/ScreenContent';
+import { Container } from '~/components/Container'
+import { ScreenContent } from '~/components/ScreenContent'
 
 export default function Home() {
-  return (
-    <>
-      <Stack.Screen options={{ title: 'Home' }} />
-      <Container>
-        <ScreenContent path="app/(drawer)/index.tsx" title="Home" />
-      </Container>
-    </>
-  );
+	return (
+		<>
+			<Stack.Screen options={{ title: 'Home' }} />
+			<Container>
+				<ScreenContent
+					path='app/(drawer)/index.tsx'
+					title='Home'
+				/>
+			</Container>
+		</>
+	)
 }

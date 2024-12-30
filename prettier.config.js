@@ -1,10 +1,21 @@
 module.exports = {
-  printWidth: 100,
-  tabWidth: 2,
-  singleQuote: true,
-  bracketSameLine: true,
-  trailingComma: 'es5',
+	arrowParens: 'always',
+	bracketSpacing: true,
+	bracketSameLine: true,
+	embeddedLanguageFormatting: 'auto',
+	endOfLine: 'lf',
+	htmlWhitespaceSensitivity: 'css',
+	jsxSingleQuote: true,
+	printWidth: 80,
+	proseWrap: 'preserve',
+	quoteProps: 'as-needed',
+	semi: false,
+	singleAttributePerLine: true,
+	singleQuote: true,
+	tabWidth: 2,
+	trailingComma: 'none',
+	useTabs: true,
 
-  plugins: [require.resolve('prettier-plugin-tailwindcss')],
-  tailwindAttributes: ['className'],
-};
+	plugins: [require.resolve('prettier-plugin-tailwindcss')],
+	tailwindAttributes: ['className']
+}
